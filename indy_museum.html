@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indianapolis Children's Museum — Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #project-hero { padding: 12rem 4rem 4rem; background: var(--void); }
+    .case-study-body { padding: 0 4rem 8rem; max-width: 1100px; margin: 0 auto; }
+    .phase-heading { font-family: var(--font-display); font-size: 2.2rem; color: var(--gold); margin: 5rem 0 1.5rem; border-bottom: 1px solid var(--fog-md); padding-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Amrita Saripalli</a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">← Back to Work</a></li>
+    </ul>
+  </nav>
+
+  <section id="project-hero">
+    <p class="hero-eyebrow">Project 04</p>
+    <h1 class="hero-name" style="font-size: clamp(3rem, 6vw, 4.8rem);">Interactive<br><span>Kiosk Redesign</span></h1>
+    
+    <div class="project-meta" style="display: flex; flex-wrap: wrap; gap: 4rem; margin-top: 3.5rem; text-align: left;">
+      <div><span><strong>Enterprise Partner:</strong><br>The Children's Museum of Indianapolis</span></div>
+      <div><span><strong>Target User Base:</strong><br>Children (Ages 7-10) &amp; Caregivers</span></div>
+      <div><span><strong>Deployment Scope:</strong><br>Spring 2025 · Experience Studio</span></div>
+    </div>
+  </section>
+
+  <main class="case-study-body">
+    
+    <h2 class="phase-heading">The Challenge</h2>
+    <div class="project-desc">
+      <p>
+        Partnering with the world's largest children's museum, our 10-student squad within Purdue University's UXD program was tasked with completely redesigning the legacy "Paint a Warrior" interactive kiosk inside the National Geographic <em>Treasures of the Earth</em> permanent gallery exhibit. 
+      </p>
+      <p>
+        The original Flash-based installation was meant to teach children how archaeologists identify and restore the vibrant, ancient mineral colors originally painted onto China's legendary Terra Cotta Warriors. However, the existing installation suffered from extreme drop-off rates: the user interface was laggy, text-heavy instructions caused instant cognitive fatigue, and a clunky 4-way mechanical joystick failed to map intuitively to the actions on screen. Physical elements, like a massive rotary wheel, were completely disconnected from the digital system, causing intergenerational frustration and abandonment within seconds.
+      </p>
+    </div>
+
+    <h2 class="phase-heading">Milestone 1: Museum Ethnography &amp; Discovery Mapping</h2>
+    <div class="project-desc">
+      <p>
+        We initiated our research sprint by conducting a dual-track discovery phase combining a comprehensive literature review on child developmental psychology with structured, on-site field observations at the museum during public hours. By tracking micro-interactions, pacing loops, and facial expressions from various observation angles, our team synthesized three foundational friction points:
+      </p>
+      <ul class="doc-list">
+        <li><strong>Single-User Bottlenecking:</strong> Kiosk ergonomics and interface mapping implicitly forced single-user engagement. This hardware configuration isolated children from accompanying parents and caretakers, blocking natural family scaffolding opportunities.</li>
+        <li><strong>Tactile Spatial Mismatch:</strong> Children exhibited intense desires to touch the tactile elements of the exhibit. However, spinning the large physical wheel provided zero real-time system responses on screen, causing fast system abandonment at early stages.</li>
+        <li><strong>Abstract Text Barriers:</strong> Younger target users lack the patience to process dense text layout paths on digital panels, relying instead on blind trial-and-error behaviors that completely bypass the underlying educational goals of the museum.</li>
+      </ul>
+    </div>
+
+    <h2 class="phase-heading">Milestone 2: Co-Design Sketching &amp; Viewport Prototyping</h2>
+    <div class="project-desc">
+      <p>
+        To balance tactile play with history and education, we generated 37 unique concepts through structured sketching sprints. We discarded purely digital ideas to focus on an ecosystem that blends physical and digital interactions, utilizing a dual-screen structural layout that separates educational guidance from gameplay.
+      </p>
+      <p>
+        We built intermediate blueprint prototypes using a specialized monochrome scheme—the museum's standard for layout evaluation—and introduced an animated <strong>digital archaeologist character guide</strong> to act as a system mentor. We tested this layout through formal usability protocols with four children (ages 8-13) and five professional museum development stakeholders.
+      </p>
+      <ul class="doc-list">
+        <li><strong>Tactile Preferences:</strong> In-person evaluations proved children universally favored physical haptic feedback (like a paintbrush stylus) over a traditional mechanical joystick, noting it made the archaeological restoration process feel "real."</li>
+        <li><strong>A/B Layout Optimization:</strong> Through rigorous multi-variate testing, we discovered that museum staff and children overwhelmingly preferred a single unified digital/physical mortar bowl concept over an abstract, multi-bowl layout to handle mineral preparation.</li>
+      </ul>
+    </div>
+
+    <h2 class="phase-heading">Milestone 3: High-Fidelity Hybrid Play Synthesis</h2>
+    <div class="project-desc">
+      <p>
+        Our final high-fidelity design completely modernizes the exhibit, replacing outdated components with an asymmetric, dual-screen hardware cabinet design. The top display handles spoken character dialogue and immersive narrative tracking, while the bottom touchscreen sits at an approachable, ADA-compliant altitude optimized for independent child manipulation.
+      </p>
+      <p>
+        We replaced the clunky joystick with a custom-molded, dual-ended <strong>stylus-pestle hybrid tool</strong> paired with raised, haptic mineral buttons. The user journey mimics genuine archaeological research protocols: visitors pick a warrior via a swiping carousel, physically press textured mineral blocks to identify pigment origins, use the pestle tool inside a physical mortar casing to crush minerals, drag the stylus to "crack an egg" binder inline, and use the paintbrush end to apply custom colors to their 3D warrior statue.
+      </p>
+    </div>
+
+    <div class="outcome-callout">
+      <h4>The Final Concept: Timed Oxidation Simulation</h4>
+      <p>
+        To align with real-world archaeological constraints, the high-fidelity system integrates a <strong>60-second timed painting window</strong>. When ancient Terra Cotta Warriors are excavated, their exposed lacquered paint layers oxidize and peel off within seconds of hitting the air, requiring immediate chemical preservation.
+      </p>
+      <p>
+        By gamifying this tension, our software engine pushes children and adults into high-engagement collaborative problem-solving. Caregivers actively read hints aloud from the top viewport, while children use the haptic tools on the bottom deck to preserve their chosen statue before time expires. Testing validated a 10/10 fun index score from visitors, extending the average interaction duration while cleanly reinforcing the museum's core learning objectives.
+      </p>
+    </div>
+  </main>
+
+  <div id="global-teleport-leon" class="global-patrol-leon">
+    <div class="beam-cone-ray"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

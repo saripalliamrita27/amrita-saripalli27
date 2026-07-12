@@ -9,9 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-      #project-hero { padding: 12rem 4rem 4rem; background: var(--void); }
-      .case-study-body { padding: 0 4rem 8rem; max-width: 1100px; margin: 0 auto; }
-      .phase-heading { font-family: var(--font-display); font-size: 2.2rem; color: var(--gold); margin: 5rem 0 1.5rem; border-bottom: 1px solid var(--fog-md); padding-bottom: 1rem; }
+    #project-hero { padding: 12rem 4rem 4rem; background: var(--void); }
+    .case-study-body { padding: 0 4rem 8rem; max-width: 1100px; margin: 0 auto; }
+    .phase-heading { font-family: var(--font-display); font-size: 2.2rem; color: var(--gold); margin: 5rem 0 1.5rem; border-bottom: 1px solid var(--fog-md); padding-bottom: 1rem; }
+    .image-placeholder-block { width: 100%; background: #120e0b; border: 1px solid var(--panel); margin: 2rem 0; padding: 1rem; text-align: center; font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+    .image-placeholder-block img { width: 100%; height: auto; display: block; border-radius: 2px; filter: brightness(0.8) contrast(1.1); margin-bottom: 0.5rem; }
   </style>
 </head>
 <body>
@@ -28,72 +30,105 @@
 
   <section id="project-hero">
     <p class="hero-eyebrow">Project 01</p>
-    <h1 class="hero-name" style="font-size: clamp(3rem, 6vw, 4.8rem);">Allied Solutions<br><span>Lending Insights Reporting Redesign</span></h1>
+    <h1 class="hero-name" style="font-size: clamp(3rem, 6vw, 4.8rem);">Allied Solutions<br><span>Lending Insights Redesign</span></h1>
     
     <div class="project-meta" style="display: flex; flex-wrap: wrap; gap: 4rem; margin-top: 3.5rem; text-align: left;">
-        <div><span><strong>Main Enterprise Sponsor:</strong><br>Victoria Wood</span></div>
-        <div><span><strong>UX Advisors:</strong><br>Nicole Whitis-Purva</span></div>
-        <div><span><strong>Core Methodology:</strong><br>Milestone 1-3 Functional Testing Matrix</span></div>
+      <div><span><strong>Enterprise Partner:</strong><br>Allied Solutions (Carmel, IN)</span></div>
+      <div><span><strong>Target User Base:</strong><br>Credit Union Lending Executives (VP / Directors)</span></div>
+      <div><span><strong>Design Deployment:</strong><br>Fall 2025 · Experience Studio Team 07</span></div>
     </div>
   </section>
 
   <main class="case-study-body">
     
-    <h2 class="phase-heading">Context & Problem Statement</h2>
+    <h2 class="phase-heading">The Strategic Challenge</h2>
     <div class="project-desc">
-        <p>Allied Solutions' Lending Insights platform provides enterprise-scale predictive metrics to credit unions nationwide[cite: 3, 5]. However, the legacy user flows for constructing custom tables were highly fragmented[cite: 5]. Financial institution managers frequently suffered from cognitive friction, forcing them to rely heavily on internal customer success agents just to format recurring monthly tracking sheets[cite: 5].</p>
-        <p>Our team at the <strong>UXD Experience Studio (Team 07)</strong> was commissioned to audit this setup, mapping out an explicit roadmap to facilitate standalone end-user report building alongside predictive AI integrations[cite: 3, 4, 5].</p>
+      <p>
+        Lending Insights is Allied Solutions' core business intelligence platform, designed to deliver critical portfolio risk analytics and loan performance dashboards to member-owned credit unions. Credit union lending executives rely on this system to monitor automotive relationship indexes and prepare audit-ready portfolio reports for executive board reviews.
+      </p>
+      <p>
+        The legacy custom reporting feature was highly fragmented, cumbersome, and opaque. Crucial data filters were buried inside disorganized lists with completely ambiguous text labels like <em>"Report Configuration"</em> and <em>"Custom 10"</em>. Because the dashboard lacked real-time interface feedback or data validation loops, executives could never verify if their adjustments were applied without re-running the entire query manually. To bypass this friction, lending teams frequently called Allied's internal support staff to compile their monthly reports from scratch, causing severe operational delays and bottlenecking internal client success teams. 
+      </p>
     </div>
 
-    <h2 class="phase-heading">Step 1: Preliminary Legacy Audit & Competitive Analysis</h2>
-    <div class="project-desc">
-        <p>We kicked off <strong>Milestone 1</strong> by implementing a formal Heuristic Evaluation focused on the application's configuration workflows[cite: 3, 4]:</p>
-        <ul class="doc-list">
-            <li><strong>Severe Violation of Heuristic 3 (User Control & Freedom):</strong> End-users could not easily cancel structural parameters or edit variables in real-time once active sorting protocols were initialized[cite: 3, 4].</li>
-            <li><strong>Ambiguous Taxonomy Standards:</strong> Internal systems used dense database field name tags (e.g., "Custom Parameter Field 10A") rather than contextual terms recognizable to real-world financial managers[cite: 3, 4].</li>
-            <li><strong>Comparative Matrixing Strategy:</strong> We cross-evaluated modern data systems like Tableau, Google Analytics, and specialized banking software dashboards to balance multi-variate sorting controls against simple visual setups[cite: 3, 4].</li>
-        </ul>
+    <div class="image-placeholder-block">
+      <img src="images/allied/legacy-workflow.jpg" alt="Figure 1: Current Custom Reporting Task Loop Matrix Map">
+      <span>[ Figure 1: Current Custom Reporting Task Loop Friction Architecture ]</span>
     </div>
 
-    <h2 class="phase-heading">Step 2: Primary Stakeholder Insights & System Pivot</h2>
+    <h2 class="phase-heading">Milestone 1: Preliminary Auditing & Primary Research</h2>
     <div class="project-desc">
-        <p>Through foundational user interviews and feedback review loops with system subject matter experts, we uncovered three hidden behavioral realities[cite: 3, 4, 5]:</p>
-        <ul class="doc-list">
-            <li><strong>AI Skepticism:</strong> Advanced credit analysts explicitly rejected conversational AI chatbot prompts for building core templates[cite: 3]. They required embedded, predictable data forecasting graphs over freeform conversational inputs[cite: 3].</li>
-            <li><strong>The Project Pivot:</strong> Mid-way through <strong>Milestone 2</strong>, our team executed a structural design pivot away from an expansive chatbot layout, shifting focus to inline data visualizer widgets equipped with transparency controls[cite: 3, 4].</li>
-        </ul>
+      <p>
+        We kicked off our discovery sprint by conducting a strict heuristic evaluation of the legacy system using Nielsen's 10 Usability Heuristics, mapped directly alongside primary usability testing sessions with business/finance students to capture baseline interactions. To ground our data structures in actual credit union context, we completed qualitative deep-dive interviews with two Subject Matter Experts (SMEs) from Allied's internal support desk and a university finance professor.
+      </p>
+      <ul class="doc-list">
+        <li><strong>Information Architecture Visibility Gaps:</strong> The system offered zero real-time chart feedback. Lenders could not search for graphs or configure duplicate measures on the same layout matrix, causing high upfront decision paralysis.</li>
+        <li><strong>The Integrated "Co-Pilot" Preference:</strong> Lenders explicitly rejected traditional floating help chatbots on dense financial interfaces, requesting instead an embedded natural-language data configuration wizard.</li>
+        <li><strong>Platform Competitive Benchmarking:</strong> Our comparative analysis across platforms like Tableau, Sisense, and Domo highlighted a clear market transition toward modular, widget-driven layouts supported by predictive forecasting curves.</li>
+      </ul>
     </div>
 
-    <div class="findings-block">
-      <h4>// Critical Research Frameworks Found In Milestone 1 & 2</h4>
-      <p>Users demanded real-time validation layers. For example, risk evaluation graphs required visual anchors (like green-to-crimson risk metrics) to instantly summarize forward-looking trends without forcing manual recalculations[cite: 3].</p>
+    <div class="image-placeholder-block">
+      <img src="images/allied/heuristic-analysis.jpg" alt="Figure 2: Legacy Platform Heuristic Analysis Sticky Mapping">
+      <span>[ Figure 2: Legacy Software Heuristic Analysis &amp; Affinity Theme Mapping ]</span>
     </div>
 
-    <h2 class="phase-heading">Step 3: SME Concept Validation & Whiteboard Iterations</h2>
+    <h2 class="phase-heading">Milestone 2: The Tactical AI Pivot & Whiteboarding</h2>
     <div class="project-desc">
-        <p>To formalize our prototype layouts, we built two variant testing concepts for controlled evaluation[cite: 3, 4]:</p>
-        <ul class="doc-list">
-            <li><strong>Concept Variant 1A (Novice-Focused Dashboard):</strong> Formatted around predefined financial layouts with simple configuration flows[cite: 3].</li>
-            <li><strong>Concept Variant 1B (Power-User Bento Setup):</strong> A comprehensive grid interface mirroring multi-window Tableau views[cite: 3].</li>
-            <li><strong>The Hybrid Synthesis:</strong> Testing with domain Experts confirmed that users wanted the structured grid framework of Variant 1B, but paired with the clear pre-populated template starter kits of Variant 1A[cite: 3]. This led directly to our <strong>Prototype Version 2.0</strong>, mapped during an intensive team mapping and whiteboard alignment session[cite: 3, 4].</li>
-        </ul>
+      <p>
+        Our initial low-fidelity sketching targeted basic modular grid alignments. However, during sponsor review sessions, our team executed a major strategic pivot: we leveraged emerging generative AI canvas tools (Figma Make) to rapidly assemble and test two distinct operational interface concepts early in the loop. 
+      </p>
+      <p>
+        <strong>Version A (Guided Dashboard):</strong> A linear, wizard-based interface prioritizing automated step-by-step reporting templates for swift walkthroughs.<br>
+        <strong>Version B (Flexible Workspace):</strong> A modular sandbox engine optimizing direct graph customization, modeled after high-density data analytics platforms.
+      </p>
+      <p>
+        We ran A/B validation tests on both versions with four Lending Insights SMEs. While developers sought standard system constraints, executives required high customizability. To combine these insights, we held a comprehensive design synthesis session, combining Version A's clear step-by-step onboarding wizard with Version B's direct widget manipulation capabilities into a single, cohesive layout blueprint.
+      </p>
     </div>
 
-    <h2 class="phase-heading">Step 4: Usability Verification & High-Fidelity Refinements</h2>
+    <div class="image-placeholder-block">
+      <img src="images/allied/whiteboard-session.jpg" alt="Figure 3: Collaborative Whiteboarding Concept Combination Blueprint">
+      <span>[ Figure 3: Mid-Fidelity Collaborative Layout Design Whiteboarding Session ]</span>
+    </div>
+
+    <h2 class="phase-heading">Milestone 3: Usability Testing & High-Fidelity Synthesis</h2>
     <div class="project-desc">
-        <p>In <strong>Milestone 3</strong>, we developed a high-fidelity prototype in Figma to run task-based usability checks[cite: 3, 4]:</p>
-        <p>We designed an explicit <strong>AI Permissions Modal</strong> that mandates end-user confirmation before cloud engines process platform metrics, protecting sensitive institutional data and building workflow trust[cite: 3]. We also added a one-click **Executive Summary Compiler** that instantly generates editable text highlights from complex table trends[cite: 3].</p>
+      <p>
+        The final high-fidelity system transitions Lending Insights from a rigid text generator into a flexible, automated workspace engine built with a custom design system styled to match Allied's modern "Greenfield" visual guidelines. 
+      </p>
+      <p>
+        The redesigned interface introduces an approachable custom reporting home dashboard featuring clear paths to deploy wizard templates, review real-time query results inline, or pull up saved layouts complete with visual preview thumbnails. Inside the building workspace, a reactive side configuration column updates a live data visualization preview instantly as variables are modified. Lenders can scale data measures, duplicate charts, switch axes, or toggle table parameters smoothly on individual widgets without losing context or resetting their progress.
+      </p>
+    </div>
+
+    <div class="image-placeholder-block">
+      <img src="images/allied/hifi-dashboard.jpg" alt="Figure 4: Redesigned Custom Reporting Interface Dashboard High Fidelity View">
+      <span>[ Figure 4: Greenfield High-Fidelity Custom Reporting Workspace &amp; Widget Customizer ]</span>
     </div>
 
     <div class="outcome-callout">
-      <h4>Measurable Performance Upgrades</h4>
-      <p>Our final task-based tests compared the legacy product interface directly against our Milestone 3 high-fidelity updates[cite: 3, 4]:</p>
-      <ul style="color: var(--ember); font-family: var(--font-mono); font-size: 1.1rem; margin-top: 1.5rem; list-style-type: none;">
-          <li>⚡ <strong>Average Task Completion Durations:</strong> Cut down by 62.8% (dropping from 172 seconds to 55.5 seconds)[cite: 3].</li>
-          <li>⚡ <strong>Total Cumulative User Clicks:</strong> Decreased by 40.6% (dropping from 35 actions down to 20 precise clicks)[cite: 3].</li>
-      </ul>
+      <h4>The Final Core Payoff: Predictive Forecasting & Summarization</h4>
+      <p>
+        The architecture implements machine learning modules directly into the analytics stream through two primary high-impact AI use cases:
+      </p>
+      <p>
+        <strong>1. AI Data Forecasting:</strong> Executives can instantly toggle predictive trend overlays directly across their active loan portfolio line graphs. The system renders clear accuracy parameters and contextual notifications, giving lenders the ability to visualize risk vector drops or promotional shifts in real time.
+      </p>
+      <p>
+        <strong>2. AI Executive Summaries:</strong> Lenders can select a group of customized widgets and click to generate an editable text write-up. The system scans the active data tables and builds a professional executive summary complete with automated problem definitions, chart data citations, and strategic interest-rate recommendations, saving hours of manual data synthesis before board meetings.
+      </p>
+    </div>
+
+    <div class="image-placeholder-block">
+      <img src="images/allied/hifi-6.jpg" alt="Figure 5: High Fidelity Interactive AI Summary Engine Interface Page View">
+      <span>[ Figure 5: Redesigned High-Fidelity Interactive AI Summary Conduits ]</span>
     </div>
   </main>
+
+  <div id="global-teleport-leon" class="global-patrol-leon">
+    <div class="beam-cone-ray"></div>
+  </div>
 
   <script src="main.js"></script>
 </body>
